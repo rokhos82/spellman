@@ -1,0 +1,623 @@
+/*
+http://colorschemedesigner.com/#3L61Tw0w0w0w0
+*/
+
+input[type=text] {
+	padding: 2px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 0px solid #000000;
+	background-color: #858585;
+	width: 125px;
+}
+
+button {
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid #ff8d40;
+	background: #101010;
+	color: #ff8d40;
+	margin: 2px;
+}
+
+button:hover {
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid #ff8d40;
+	background: #bf8f30;
+	color: #000000;
+	margin: 2px;
+}
+
+#debug {
+	overflow: scroll;
+	height: 300px;
+	width: 600px;
+}
+
+.SM_overlay {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000000;
+	opacity: .75;
+	z-index: 1;
+}
+
+.SM_tab {
+	display: inline;
+	margin: 0;
+	margin-right: 5px;
+	padding: 10px;
+	padding-top: 3px;
+	padding-bottom: 0px;
+	color: #e6fff8;
+	/*-moz-border-radius-topleft: 5px;
+	-webkit-border-top-left-radius: 5px;
+	-moz-border-radius-topright: 5px;
+	-webkit-border-top-right-radius: 5px;*/
+}
+
+.TC_tab_active > .SM_tab {
+	/*background-color: #40806e;*/
+	background: -moz-linear-gradient(top,#000000,#202020);
+	border-bottom: 2px solid /*#40806e*/ #202020;
+}
+
+.TC_tab_inactive > .SM_tab {
+	background-color: #101010;
+	border-bottom: 2px solid #101010;
+}
+
+.SM_panel {
+	margin: 0;
+	padding: 10px;
+	padding-top: 4px;
+	background-color: /*#40806e*/#202020;
+	color: #e6fff8;
+	/*-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius-topleft: 0px;
+	-webkit-border-top-left-radius: 0px;*/
+	min-height: 300px;
+}
+
+.SM_menu {
+	float: left;
+	margin: 5px;
+}
+
+.SM_content {
+	float: left;
+	margin: 5px;
+	min-width: 700px;
+}
+
+.SM_menu_button {
+	display: block;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid #ff8d40;
+	background: #101010;
+	color: #ff8d40;
+	margin: 2px;
+}
+
+.SM_menu_button:hover {
+	background: #200772;
+}
+
+.SM_menu_button:active {
+}
+
+.SM_disc_content {
+	margin: 5px;
+	padding: 5px;
+	border: 2px solid #ffaa00;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.SM_disc_table {
+	color: #ffffff;
+}
+
+.SM_disc_table thead {
+}
+
+.SM_disc_table tr {
+}
+
+.SM_disc_table td {
+	background: #ffaa00;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 3px 5px;
+	color: #000000;
+}
+
+.SM_hist_content {
+	padding: 5px;
+	margin: 5px;
+	border: 2px solid #ffaa00;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.SM_hist_table {
+}
+
+.SM_hist_table td {
+	background: #ffaa00;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 3px 5px;
+	color: #000000;
+}
+
+.SM_spell_def_content {
+	overflow: auto;
+	height: 400px;
+	width: 825px;
+}
+
+.SM_spell_def_table {
+	border: 1px solid #ff8d40;
+	border-collapse: collapse;
+	margin: 5px;
+	display: inline-table;
+}
+
+.SM_spell_def_table tr {
+	border: 1px solid #ff8d40;
+	border-collapse: collapse;
+}
+
+.SM_spell_def_table td {
+	padding: 2px;
+	padding-left: 5px;
+}
+
+.SM_spell_def_table thead {
+	text-align: center;
+}
+
+.SM_spell_def_header {
+	margin-bottom: 10px;
+}
+
+.SM_spell_def_close_btn {
+	float: right;
+}
+
+.SM_spell_def_list {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	display: block;
+	width: 300px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid #ffffff;
+}
+
+.SM_spell_edit_content {
+	display: none;
+	z-index: 2;
+	position: fixed;
+	top: 25px;
+	left: 400px;
+	background-color: #303030;
+	border: 1px solid #ff8d40;
+	padding: 10px;
+	width: 500px;
+}
+
+.SM_spell_edit_content input[type=text] {
+	width: 250px;
+}
+
+.SM_spell_edit_content label {
+	margin: 5px;
+}
+
+.SM_spell_edit_close_btn {
+	float: right;
+}
+
+.SM_spell_edit_header {
+	margin-bottom: 10px;
+}
+
+.SM_spell_edit_disc_list {
+	display: block;
+	width: 300px;
+}
+
+.SM_book_content {
+	display: block;
+	background-color: #999999;
+	padding: 10px;
+	width: 700px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.SM_book_header {
+	padding: 5px;
+}
+
+.SM_book_title {
+	font-size: 18pt;
+	color: ffaa00;
+	text-shadow: 4px 3px 3px #4d2f00;
+}
+
+.SM_book_body {
+	padding: 5px;
+}
+
+.SM_book_cell {
+	margin: 0;
+	margin-right: 5px;
+	padding: 0;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.SM_book_body button {
+	margin-top: 5px;
+	margin-right: 5px;
+}
+
+.SM_book_close_btn {
+	float: right;
+}
+
+.SM_book_spell_list {
+	display: block;
+	width: 250px;
+}
+
+.SM_book_power {
+	width: 30px;
+}
+
+.SM_cast_popup {
+	display: none;
+	z-index: 2;
+	position: fixed;
+	top: 25px;
+	left: 450;
+	background-color: #999999;
+	padding: 10px;
+	width: 400;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.SM_cast_close_btn {
+	float: right;
+}
+
+.SM_disc_edit_content {
+	display: none;
+	z-index: 2;
+	position: fixed;
+	top: 25px;
+	left: 450px;
+	background-color: #303030;
+	border: 1px solid #ff8d40;
+	padding: 10px;
+	width: 400;
+}
+
+.SM_disc_edit_close_btn {
+	float: right;
+}
+
+.SM_disc_edit_spell_list {
+	display: block;
+	width: 300px;
+}
+
+input.SM_spellList_rank {
+	width: 30px;
+}
+
+.SM_spellList_table {
+	border-collapse: collapse;
+	border: 1px solid #ff8d40;
+	color: #ff8d40;
+	margin: 5px;
+	display: inline-table;
+}
+
+.SM_spellList_table thead {
+	color: #eeeeee;
+}
+
+.SM_spellList_table tr {
+	border-collapse: collapse;
+	border: 1px solid #ff8d40;
+}
+
+.SM_spellList_table td {
+	border-collapse: collapse;
+	border: 1px solid #ff8d40;
+	text-align: center;
+	padding: 2px;
+}
+
+.SM_discList_table {
+	border-collapse: collapse;
+	border: 1px solid #ff8d40;
+	color: #ff8d40;
+	margin: 5px;
+	display: inline-table;
+}
+
+.SM_discList_table thead {
+	color: #eeeeee;
+}
+
+.SM_discList_table tr {
+	border-collapse: collapse;
+	border: 1px solid #ff8d40;
+}
+
+.SM_discList_table td {
+	border-collapse: collapse;
+	border: 1px solid #ff8d40;
+	text-align: center;
+	padding: 2px;
+}
+
+input.SM_discList_rank {
+	width: 30px;
+}
+
+.SM_pool_content {
+	display: inline-table;
+	margin: 5px;
+}
+
+.SM_pool_table {
+	color: #ff8d40;
+	border-collapse: collapse;
+	border: 1px solid #ff8d40;
+}
+
+.SM_pool_table tr {
+	text-align: center;
+}
+
+.SM_pool_table td {
+	border-collapse: collapse;
+	border: 1px solid #ff8d40;
+	padding: 2px;
+}
+
+.SM_pool_table thead {
+	color: #eeeeee;
+}
+
+.SM_pool_title {
+	color: #00c0e5;
+	font-variant: small-caps;
+}
+
+.SM_char_content {
+}
+
+.SM_activeSpells_content {
+	display: inline-table;
+	margin: 5px;
+}
+
+.SM_activeSpells_table {
+	color: #ff8d40;
+	border-collapse: collapse;
+	border: 1px solid #ff8d40;
+}
+
+.SM_activeSpells_table tr {
+	text-align: center;
+	border-collapse: collapse;
+	border: 1px solid #ff8d40;
+}
+
+.SM_activeSpells_table td {
+	border-collapse: collapse;
+	border: 1px solid #ff8d40;
+	padding: 2px;
+}
+
+.SM_activeSpells_table thead {
+	color: #eeeeee;
+}
+
+.SM_activeSpells_title {
+	color: #00c0e5;
+	font-variant: small-caps;
+}
+
+.SM_spellCast_content {
+	display: block;
+	border: 1px solid #ff8d40;
+	margin: 5px;
+	padding: 5px;
+}
+
+.SM_spellCast_title {
+	color: #00c0e5;
+	text-align: center;
+	font-variant: small-caps;
+}
+
+.SM_spellCast_spell_list {
+	width: 200px;
+}
+
+.SM_spellCast_div {
+	display: inline-block;
+	margin: 5px;
+	vertical-align: top;
+}
+
+.SM_spellCast_table {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.SM_spellCast_table tr {
+	text-align: right;
+	padding: 3px;
+}
+
+td.SM_spellCast_checkbox_cell {
+	text-align: left;
+}
+
+.SM_attributes_content {
+	display: inline-table;
+	margin: 5px;
+}
+
+.SM_attributes_table {
+	border-collapse: collapse;
+	border: 1px solid #ff8d40;
+	color: #ff8d40;
+}
+
+.SM_attributes_table tr {
+	border-collapse: collapse;
+	border: 1px solid #ff8d40;
+}
+
+.SM_attributes_table td {
+	border-collapse: collapse;
+	border: 1px solid #ff8d40;
+	padding: 2px;
+	text-align: center;
+}
+
+.SM_attributes_title {
+	color: #00c0e5;
+	font-variant: small-caps;
+}
+
+td.SM_attributes_label {
+	color: #eeeeee;
+	text-align: right;
+	padding-left: 3px;
+	padding-right: 3px;
+}
+
+.SM_charEdit_content {
+	display: none;
+	z-index: 2;
+	position: fixed;
+	top: 25px;
+	left: 450px;
+	background-color: #303030;
+	border: 1px solid #ff8d40;
+	padding: 10px;
+	width: 400px;
+}
+
+.SM_charEdit_block {
+	display: block;
+}
+
+.SM_charEdit_close_btn {
+	float: right;
+}
+
+.SM_charEdit_title {
+	color: #ff8d40;
+	font-variant: small-caps;
+}
+
+.SM_charEdit_table td {
+	text-align: right;
+}
+
+.SM_castLog_content {
+	margin: 5px;
+}
+
+.SM_castLog_table {
+	border-collapse: collapse;
+	border: 1px solid #ff8d40;
+}
+
+.SM_castLog_title {
+	color: #00c0e5;
+	font-variant: small-caps;
+}
+
+.SM_castLog_table tbody {
+	color: #ff8d40;
+}
+
+.SM_castLog_table tr {
+	border-collapse: collapse;
+	border: 1px solid #ff8d40;
+}
+
+.SM_castLog_table td {
+	border-collapse: collapse;
+	border: 1px solid #ff8d40;
+	padding: 3px;
+	text-align: center;
+}
+
+.SM_spellPreset_div {
+	display: inline-block;
+	margin: 5px;
+	vertical-align: top;
+}
+
+.SM_spellPreset_spell_list {
+	width: 200px;
+}
+
+.SM_spellPreset_table {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.SM_spellPreset_table tr {
+	text-align: right;
+	padding: 3px;
+}
+
+td.SM_spellPreset_checkbox_cell {
+	text-align: left;
+}
+
+.SM_spellPreset_preset_table {
+	border: 1px solid #ff8d40;
+	border-collapse: collapse;
+	margin: 5px;
+	margin-top: 10px;
+}
+
+.SM_spellPreset_preset_table tr {
+	border: 1px solid #ff8d40;
+	border-collapse: collapse;
+}
+
+.SM_spellPreset_preset_table td {
+	border: 1px solid #ff8d40;
+	border-collapse: collapse;
+	padding: 3px;
+	text-align: center;
+}
+
+.SM_spellPreset_preset_table tbody {
+	color: #ff8d40;
+}

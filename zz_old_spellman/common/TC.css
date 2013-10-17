@@ -1,0 +1,35 @@
+.TC_tab_div {
+	display: block;
+	margin: 0px;
+	padding: 0px;
+}
+
+.TC_tab_list {
+	margin: 0px;
+	padding: 0px;
+}
+
+.TC_tab_active {
+	display: inline;
+	margin: 0px;
+	padding: 0px;
+}
+
+.TC_tab_inactive {
+	display: inline;
+	margin: 0px;
+	padding: 0px;
+}
+
+.TC_content_div {
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	padding: 0px;
+}
+
+.TC_panel {
+	display: none;
+	margin: 0px;
+	padding: 0px;
+}

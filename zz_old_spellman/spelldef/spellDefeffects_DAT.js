@@ -1,0 +1,2 @@
+SA.spellDef.effectDAT = function() {
+};

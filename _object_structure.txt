@@ -1,0 +1,31 @@
+SM
+ |
+ -- spallManagerDAT
+     |
+     -- activityDAT
+     |   |
+     |   -- castHistoryDAT
+     |   |   |
+     |   |   -- casts := Hashed array of castEntryDAT objects
+     |   |
+     |   -- active_spells := Hashed array of activeSpellDAT objects
+     |
+     -- characterDAT
+     |   |
+     |   -- attributeSetDAT
+     |   |
+     |   -- spellBookDAT
+     |   |
+     |   -- itemSetDAT
+     |
+     -- definitionsDAT
+         |
+         -- spells := Hashed array of spellDAT objects
+         |
+         -- disciplines := Hashed array of disciplineDAT objects
+         
+SM
+ |
+ -- spellManagerSVC
+     |
+     -- 
