@@ -33,6 +33,10 @@ button:hover {
 	overflow: scroll;
 	height: 300px;
 	width: 600px;
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	border: 1px solid #ffaa00;
 }
 
 .SM_overlay {
@@ -55,10 +59,10 @@ button:hover {
 	padding-top: 3px;
 	padding-bottom: 0px;
 	color: #e6fff8;
-	/*-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topleft: 5px;
 	-webkit-border-top-left-radius: 5px;
 	-moz-border-radius-topright: 5px;
-	-webkit-border-top-right-radius: 5px;*/
+	-webkit-border-top-right-radius: 5px;
 }
 
 .TC_tab_active > .SM_tab {

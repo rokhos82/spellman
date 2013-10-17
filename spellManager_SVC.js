@@ -21,6 +21,7 @@ SM.spellManagerSVC.prototype.saveToLocalStorage = function() {
 	
 	if(localStorage && JSON) {
 		localStorage.setItem(this.serializer.ls_name,JSON.stringify(this.dat));
+		SM.log("[NOTICE] SM.spellManagerSVC.prototype.saveToLocalStorage was successful!");
 	}
 	else {
 		SM.log("[ERROR] SM.spellManagerSVC.prototype.saveToLocalStorage: JSON or localStorage not available");

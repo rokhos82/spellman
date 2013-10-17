@@ -1,6 +1,6 @@
 SM = {};
 
-SM.debug = false;
+SM.debug = true;
 SM.debugging = {};
 SM.debugging.trace = new Array();
 SM.debugging.root = undefined;
