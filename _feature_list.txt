@@ -1,0 +1,24 @@
+--- Spell Manager ---
+- Character Data
+	- Manual Setup
+	- CharGen scrape
+		- UI
+		- SVC
+
+- Character Attr/Stat Interface
+	- Change table cells to be editablecontent
+
+- Interface
+
+	
+--- Spell Definitions ---
+- Data Object
+	- Hold Shane's info as textual only.
+	- Use a calc object to hold calculation info as sub-objects.
+
+--- Spell Queue ---
+- Allow the user to queue up spells.
+
+--- Active Spells ---
+- Add description column
+- Add reset button
