@@ -7,7 +7,26 @@ I haven't touched this project in almost two years and there is a lot of refacto
 
 Todo
 ========
-* Clean up UI code
+* Clean up UI
+	* Use hearder/footer/toolbar/main style interface
+	* Main interface
+		* Spell list on left.
+		* Active Spells at top
+		* Casting history at bottom
 * Convert spell defitions to a database rather than js file
 * Convert existing spell calcuation objects to JavaScript for ease of use
 * Flesh out character details
+* Allow tracking of xp for spells/casting/discippline
+* Track karma
+* Spend karma for stamina
+* Meditate for stamina boost
+* Track stamina recovery rate
+* Rest for X hours
+
+
+Casting a Spell
+=======
+1. Select discipline
+1. Select spell
+1. Input casting parameters
+1. Click 'cast', 'failure', 'ace'
